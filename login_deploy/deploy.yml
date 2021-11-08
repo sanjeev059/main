@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: webapp
+ labels:
+  app: webapp
+spec:
+ containers: 
+ - name: webapp
+   image: public.ecr.aws/v7h3r0g5/django-first-app:latest
+
