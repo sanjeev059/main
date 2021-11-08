@@ -25,7 +25,7 @@ SECRET_KEY = '_ji(#u^x8d8!buf(!2@&v7(0-lo20s4uc87h+whlyi1&vlmp0('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['firstapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
