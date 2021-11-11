@@ -7,24 +7,25 @@
 
 <div class="sidenav">
          <div class="login-main-text">
-            <h2> Radisys Dashboard (DEG)</h2>
-            <p>Login to check historical builds and status</p>
+            <h2>Kubernetes Dashborad</h2>
+            <p> Practice and play around</p>
          </div>
       </div>
       <div class="main">
          <div class="col-md-6 col-sm-12">
             <div class="login-form">
-               <form>
+               <form method="post">
+                   {% csrf_token %}
                   <div class="form-group">
                      <label>User Name</label>
-                     <input type="text" class="form-control" placeholder="User Name">
+                     <input  name="username" type="text" class="form-control" placeholder="User Name">
                   </div>
                   <div class="form-group">
                      <label>Password</label>
-                     <input type="password" class="form-control" placeholder="Password">
+                     <input name="password" type="password" class="form-control" placeholder="Password">
                   </div>
+                   </br>
                   <button type="submit" class="btn btn-black">Login</button>
-                  <button type="submit" class="btn btn-secondary">Register</button>
                </form>
             </div>
          </div>
